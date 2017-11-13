@@ -1,0 +1,696 @@
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,div{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font:14px "simhei",Arial,Helvetica,sans-serif;
+    color:#666;
+    margin:0;
+    padding:0;
+    /*background-color:#f5f5f5;*/
+    display:block;
+}
+.header{
+    /*position:absolute;*/
+    height:30px;
+    width:100%;
+    z-index:1000;
+    background: #323232;
+    position: fixed;
+}
+.header div.logo{
+    float:left;
+}
+.header div.logo a{
+    text-decoration: none;
+    color:#0073b6;
+}
+.header div.logo img{
+    width:58px;
+    height:18px;
+    margin-left:30px;
+    margin-top:6px;
+}
+.header ul.nav-list{
+    float:left;
+    /*display:flex;*/
+    padding-left:20px;
+    margin-top:-15px;
+    margin-bottom:10px;
+}
+.header ul.nav-list li:nth-child(2) a{
+    color:#10b041;
+}
+.header ul.nav-list li:hover a{
+    color:#10b041;
+}
+.header ul.nav-list li{
+    padding:18px 16px;
+    font-size: 16px;
+    font-weight:bold;
+    border-top:2px solid transparent;
+    position: relative;
+    float:left;
+}
+.header ul.nav-list li a{
+    color:white;
+    text-decoration: none;
+    background: transparent;
+}
+.drop-content div.drop-one{
+    width:168px;
+    background: white;
+    border-radius:6px;
+    position: absolute;
+    top:46px;
+    left:-10px;
+}
+.drop-content div.drop-one ul li{
+    padding:6px 39px 3px 9px;
+    font-size: 16px;
+    color:black;
+    font-weight: normal;
+    margin-bottom:5px;
+}
+.drop-content img{
+    position: absolute;
+    top:36px;
+    right:61px;
+}
+.drop-one ul li:hover{
+    background: #E3FAE1;
+    cursor: pointer;
+}
+.drop-reserve div.drop-two{
+    width: 113px;
+    background: white;
+    border-radius: 6px;
+    position:absolute;
+    top:46px;
+    left:9px;
+}
+.drop-reserve div.drop-two ul li{
+    padding:3px 39px 3px 9px;
+    font-size: 16px;
+    color:black;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.drop-reserve img{
+    position:absolute;
+    top:36px;
+    left:34px;
+}
+.drop-two ul li:hover{
+    background: #E3FAE1;
+    cursor: pointer;
+}
+.header div.search{
+    float:right;
+    width:39%;
+    height:100%;
+    /*display:flex;*/
+    /*justify-content: space-around;*/
+}
+.header div.search form{
+    width:230px;
+    margin-top:6px;
+    min-height:25px;
+}
+.header div.search form input{
+    border-radius: 5px;
+    height:17px;
+    width:70%;
+    border:0;
+    float:right;
+}
+.header div.search form a img{
+    transform: translate(207px,0);
+}
+.header div.search div.login{
+    float:right;
+    /*display:flex;*/
+    padding-left:20px;
+    width:270px;
+    /*justify-content: space-around;*/
+    position:absolute;
+    top:-2px;
+    right:5px;
+}
+.header div.search div.login a{
+    cursor: auto;
+    color:white;
+    padding:1px 4px;
+}
+.header div.search div.login a img{
+    width:22px;
+    height:22px;
+    margin-top:6px;
+}
+.header div.search div.login div.log{
+    /*display:flex;*/
+    /*justify-content: space-around;*/
+    width:160px;
+    margin-top:8px;
+    float:right;
+}
+.header div.search div.login div.log a{
+    font-size: 15px;
+    padding:10px 17px;
+}
+
+/*面包屑*/
+.head-title{
+    width:100%;
+    min-width: 960px;
+    position: absolute;
+    top: 29px;
+}
+.head-title .crumb{
+    width:960px;
+    margin: 20px auto;
+    text-align: left;
+}
+.crumb h1{
+    font-size: 14px;
+    font-weight: normal;
+}
+.main{
+    width:960px;
+    margin:20px auto 50px;
+    position: absolute;
+    top:67px;
+    padding: 0 235px;
+    min-height: 1000px;
+}
+.main .top{
+    margin-bottom: 10px;
+    position:relative;
+    background:#e43833;
+}
+.top img{
+    border:0;
+}
+.top .guide-search{
+    position: absolute;
+    top:24px;
+    left:660px;
+    width:265px;
+    height:30px;
+    z-index: 20;
+    border:1px solid #dddddd;
+    border-radius: 4px;
+    background: white;
+    padding-left: 1px;
+}
+.guide-search p input{
+    width:200px;
+    background:#ffffff url("../img/guide/search.png") no-repeat 9px;
+    height:29px;
+    border:none;
+    padding-left: 30px;
+    background-size: 5%;
+    font-size: 14px;
+    padding-right: 10px;
+    outline: medium;
+}
+.guide-search span{
+    width: 10px;
+    height: 10px;
+    display: block;
+    float: right;
+    margin-top: -25px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.guide-search span img{
+    width: 6px;
+    margin: 1px;
+}
+.nav{
+   position: relative;
+    width: 960px;
+}
+.f1{
+    float: left !important;
+}
+.nav-left{
+    width:200px;
+    height: 509px;
+    background: #f6f6f6;
+    display: inline-block;
+}
+.nav-box{
+    position: relative;
+    width:100%;
+    height:345px;
+}
+.nav-box .nav-item{
+    float:left;
+    display: inline;
+    width:100%;
+    border: 1px solid #ffffff;
+}
+.nav-box li.item-current{
+    background: #ebebeb;
+}
+.nav-item-title{
+    padding:6px 16px 6px 20px;
+    height:20px;
+    line-height: 20px;
+    color:#636363;
+    position: relative;
+}
+.nav-item-title span.sum{
+    width:37px;
+    border-radius: 7px;
+    background: #cecece;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    right:12px;
+    top: 6px;
+    height: 22px;
+    line-height: 22px;
+}
+.nav-item-title .catename{
+    font-size: 16px;
+    color: #000000;
+    opacity: 0.8;
+}
+.nav-bottom .icon{
+    float: left;
+    margin-left: 26px;
+    margin-top: 6px;
+}
+.icon img{
+    width:30px;
+    height:30px;
+    box-shadow: 0 1px 1px #ccc;
+    border-radius: 6px;
+}
+.nav-bottom .icon-1{
+    font-size: 18px;
+    line-height: 18px;
+    height:18px;
+    float: left;
+    color: #000;
+    margin: 13px 0 12px 6px;
+    opacity: 0.8;
+}
+.nav-bottom .icon-2{
+    width:120px;
+   margin: 0 auto;
+    display: block;
+}
+.nav-right{
+    position: relative;
+    width: 750px;
+    height: 509px;
+    overflow: hidden;
+    float: right;
+    display: inline;
+}
+.nav-right .slide{
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width:750px;
+    height: 509px;
+}
+.slide .slide_control{
+    position: relative;
+    width:2250px;
+    height:509px;
+}
+.slide_control .banner{
+    position: absolute;
+}
+.pagination{
+    position: absolute;
+    right:20px;
+    bottom:20px;
+    z-index: 6;
+}
+.pagination li{
+    float:left;
+    margin-left: 10px;
+    width:12px;
+    height:12px;
+    overflow: hidden;
+    border:none;
+    line-height: 320px;
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.pagination li.page-current{
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.recommend{
+    margin-top: 20px;
+    height:271px;
+}
+.recommend p.guide-title{
+    margin-bottom: 8px; 
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #636363;
+}
+.recom-list{
+    background: #f6f6f6;
+    padding:0 3px;
+    height: 247px;
+}
+.recom-list li{
+    float: left;
+    width: 108px;
+    padding:15px 25px;
+    border-left:1px dotted #CCCCCC;
+}
+.recom-list li:first-child{
+    border:0;
+}
+li div.pic{
+    position: relative;
+    padding: 3px;
+    border:1px solid #CCCCCC;
+    box-shadow: 0 0 2px #ccc;
+    background: #ffffff;
+}
+.pic a img{
+    width: 100px;
+    height: 150px;
+}
+.pic span.new{
+    position: absolute;
+    top:3px;
+    left: 3px;
+    width: 36px;
+    height:36px;
+    background: url("../img/guide/jn_new2.png") no-repeat;
+}
+.title{
+    padding-top: 10px;
+    width:100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+.title a{
+    color:#0073b6;
+}
+.recom-list .btn{
+    margin-top: 7px;
+}
+.btn a{
+    background: #1995dd;
+    height:24px;
+    padding:0 13px;
+    border:none;
+    border-radius: 3px;
+    overflow: visible;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    line-height: 24px;
+}
+.guide-list{
+    margin-top: 30px;
+    height:1134px;
+}
+.guide-list .guide-right{
+    width: 670px;
+    float:right;
+    display: inline;
+}
+.guide-right h2{
+    margin-top: -10px;
+    line-height: 34px;
+    font-weight: bold;
+    font-size: 14px;
+    color:#636363;
+}
+.guide-right .sort{
+    margin-bottom: 15px;
+}
+.sort a{
+    color:#636363;
+    font-weight: bold;
+}
+.sort a:hover{
+    text-decoration: underline;
+}
+.sort a:last-child{
+    color:#0073b6;
+    font-weight: normal;
+}
+.sort a :last-child:hover{
+    text-decoration: underline;
+}
+ul.guide-inner{
+    margin-left: -32px;
+    height:222px;
+}
+.guide-inner .guide-item .g-pic .mark{
+    position: absolute;
+    top:2px;
+    left:2px;
+    width:100px;
+    height:150px;
+    background: #000000;
+    opacity: 0.5;
+    display: none;
+}
+.content{
+    height:1060px;
+}
+.content .line{
+    width:100%;
+    height:0;
+    overflow: hidden;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.guide-inner li.guide-item{
+    float:left;
+    display: inline;
+    width:108px;
+    padding-left: 32px;
+}
+.nav-item-inner{
+    width:700px;
+    overflow: hidden;
+    position: absolute;
+    height: 320px;
+    background: #f5f5f6;
+    float: left;
+    left:199px;
+    top:22px;
+    z-index:10;
+    border-left:1px solid #fff;
+    border-bottom:20px solid transparent ;
+    border-top:20px solid transparent;
+}
+.nav-item-inner ul.clearfix{
+    position: absolute;
+    top:0;
+    width:700px;
+    left:0;
+}
+ul.clearfix li{
+    float: left;
+    display: inline;
+    width:174px;
+    padding-top:15px;
+    border-right:1px solid #CCCCCC ;
+}
+.clearfix li dl{
+    margin-bottom: 5px;
+}
+.clearfix li dl dt{
+    color:#999;
+    text-indent: 22px;
+}
+.clearfix li dl dd a{
+    display: block;
+    padding-left:34px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow:ellipsis ;
+    white-space: nowrap;
+    color:#0073b6;
+}
+.clearfix li dl dd a:hover{
+    background:#E3FAE1 ;
+}
+.guide-item .g-pic{
+    position: relative;
+    padding:3px;
+    border:1px solid #ccc;
+    box-shadow: 0 0 2px #ccc;
+    background: #ffffff;
+}
+.g-pic a img{
+    width: 100px;
+    height: 150px;
+}
+.g-pic span.new{
+    position: absolute;
+    top:3px;
+    left: 3px;
+    width: 36px;
+    height:36px;
+    background: url("../img/guide/jn_new2.png") no-repeat;
+}
+.g-title{
+    padding-top: 10px;
+    width:100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+.g-title a{
+    color:#0073b6;
+}
+.g-date{
+    color:#636363;
+    font-size: 13px;
+}
+.guide-left{
+    float:left;
+    width: 270px;
+}
+.user-list h2{
+    margin-top: -10px;
+    line-height: 34px;
+    font-weight: bold;
+    font-size: 15px;
+    color:#636363;
+}
+ul.user{
+    margin-bottom: 30px;
+}
+.user li{
+    margin-top: 6px;
+    padding-left: 30px;
+    height:24px;
+    line-height: 24px;
+    color:#666;
+    overflow: hidden;
+}
+.user li a{
+    color:#0073b6;
+}
+.user li a img{
+    width: 24px;
+    height:24px;
+    float:left;
+    display: inline;
+    margin-left: -30px;
+}
+.user li a:hover{
+    text-decoration: underline;
+}
+.guide-left .img-1{
+    margin-bottom: 30px;
+}
+.page-1 .page-btn{
+    float: right;
+}
+.page-btn a{
+    display: inline-block;
+    padding:0 6px;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 24px;
+    color:#636363;
+}
+.page-btn a:hover{
+    background: #e0f1e1;
+    border-radius: 3px;
+    color: #323232;
+}
+.page-btn a.current{
+    background:#5ea67c;
+    border-radius: 3px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/*footer*/
+.text{
+    position:absolute;
+    top:2207px;
+    left:225px;
+}
+.footer{
+    margin:70px auto 0;
+    background: #323232;
+    min-height: 172px;
+    position: absolute;
+    top:2152px;
+    width: 1423px;
+}
+.footer div.topline{
+    background: #28b76c;
+    height:3px;
+}
+.foot{
+    margin: 0 auto;
+    width:980px;
+}
+.foot ul.nav{
+    margin: 30px 0;
+    height:30px;
+    line-height: 30px;
+}
+.foot ul.nav li{
+    float:left;
+}
+.foot ul.nav a{
+    color:white;
+    text-decoration: none;
+    padding:0 10px;
+    border-left:1px solid #636363;
+}
+.foot ul.nav li:first-child a{
+    border-left:2px solid #28b76c;
+}
+.foot .info{
+    text-align: left;
+    font-size:13px;
+    height:20px;
+}
+p.info a{
+    color:#5C5D5D;
+    text-decoration: none;
+}
+ul.link{
+    margin-top: 20px ;
+}
+ul.link li{
+    float:left;
+}
+.footer .foot .link li a{
+    color:#484C49;
+    padding-left:5px;
+    text-decoration: none;
+}
+.foot .link li a:hover{
+    color:silver;
+    text-decoration: underline;
+}
+

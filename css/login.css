@@ -1,0 +1,340 @@
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+body{
+    font:14px "simhei",Arial,Helvetica,sans-serif;
+    color:#666;
+    margin:0;
+    padding:0;
+    /*background-color:#f5f5f5;*/
+    display:block;
+}
+input::-webkit-input-placeholder{
+    color:#dddddd;
+}
+.user_login{
+    width:100%;
+    height:980px;
+}
+.user_login .container{
+    width:100%;
+    height:780px;
+    background: url("../img/register/bg-2.jpg") no-repeat;
+    border-top: 1px solid transparent;
+}
+.container .inner{
+    width:380px;
+    min-height: 400px;
+    margin:50px auto;
+}
+.inner .title{
+    width:380px;
+    height:46px;
+    margin:50px auto;
+    text-align: center;
+}
+.inner .title img{
+    width:126px;
+    height:46px;
+}
+.inner .title span{
+    font-size: 25px;
+    color:white;
+    vertical-align: text-bottom;
+    text-shadow:0 0 4px rgba(0,0,0,.4);
+}
+.chart{
+    background: rgba(0,0,0,0.5);
+    padding:5px 25px;
+}
+.chart form{
+    padding:25px 0 8px ;
+}
+.chart .nav{
+    height:60px;
+    line-height: 60px;
+}
+.nav .account{
+    float:left;
+    font-size:18px;
+    padding:0 46px ;
+    border-bottom: 2px solid #dddddd;
+    cursor: pointer;
+    color:white;
+}
+.chart .nav div.current{
+    border-bottom: 2px solid #3F9F5F;
+    color:#3F9F5F;
+}
+.nav .message{
+    font-size: 18px;
+    float:right;
+    padding:0 29px;
+    border-bottom: 2px solid #dddddd;
+    cursor: pointer;
+    color:white;
+}
+form div.explain{
+    margin-bottom:25px;
+    color:white;
+}
+form div.explain a{
+    color:#3F9F5F;
+    text-decoration:none ;
+}
+#uname{
+    width:98%;
+    height:34px;
+    padding:0 3px 0 3px;
+
+}
+.vali{
+    color:white;
+    margin: 10px 0;
+}
+.vali img{
+    vertical-align: bottom;
+}
+#upwd{
+    width:98%;
+    height:34px;
+    padding:0 3px 0 3px;
+}
+/*.sure{*/
+    /*position: absolute;*/
+    /*top:288px;*/
+    /*left:856px;*/
+/*}*/
+form a:nth-child(8){
+    display: block;
+    height:35px;
+    width:330px;
+    text-align: center;
+    text-decoration: none;
+    background:#5CAD77 ;
+    color:white;
+    font-size: 19px;
+    border-radius: 4px;
+    line-height: 35px;
+}
+.form-1 a:nth-child(6){
+    display: block;
+    height:35px;
+    width:330px;
+    margin-top: 32px;
+    text-align: center;
+    text-decoration: none;
+    background:#5CAD77 ;
+    color:white;
+    font-size: 19px;
+    border-radius: 4px;
+    line-height: 35px;
+}
+.bottom{
+    padding:15px 0;
+}
+.login{
+    color:white;
+}
+.login a {
+    color:#3F9F5F;
+    text-decoration: none;
+}
+.login a:hover{
+    text-decoration: underline;
+}
+.agree{
+    color:white;
+}
+.agree a{
+    color:white;
+    text-decoration: none;
+    float: right;
+}
+.agree a:hover{
+    color:#3F9F5F;
+}
+.logos{
+    margin-left:29px;
+}
+.logos a{
+    text-decoration: none;
+    display: inline-block;
+    margin:20px 0;
+    padding-left: 30px;
+    width:40px;
+    height:40px;
+}
+.logos a:first-child{
+    background: url("../img/login/qq1.jpg") no-repeat;
+}
+.logos a:first-child:hover{
+   background: url("../img/login/qq2.jpg") no-repeat;
+}
+.logos a:nth-child(2){
+    background: url("../img/login/weibo1.jpg") no-repeat;
+}
+.logos a:nth-child(2):hover{
+    background: url("../img/login/weibo2.jpg") no-repeat;
+}
+.logos a:nth-child(3){
+    background: url("../img/login/taobao1.jpg") no-repeat;
+}
+.logos a:nth-child(3):hover{
+    background: url("../img/login/taobao2.jpg") no-repeat;
+}
+.logos a:last-child{
+    background: url("../img/login/weixin1.jpg") no-repeat;
+}
+.logos a:last-child:hover{
+    background: url("../img/login/weixin2.jpg") no-repeat;
+}
+form div.tel{
+    height:39px;
+}
+.tel input:first-child{
+    width:42px;
+    height:37px;
+    padding:0 20px 0 10px;
+    border:1px solid #dddddd;
+    background: white;
+}
+.tel input:last-child{
+    height:35px;
+    width:217px;
+    border:1px solid #dddddd;
+    padding:0 20px 0 10px;
+}
+.code{
+    height:39px;
+}
+.code input:first-child{
+    height:36px;
+    width:180px;
+    padding:0 20px 0 10px;
+    border:1px solid #dddddd;
+}
+.code img{
+    width:111px;
+    height:39px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.messages{
+    height:39px;
+}
+.messages input:first-child{
+    height:35px;
+    width:180px;
+    padding:0 20px 0 10px;
+    border:1px solid #dddddd;
+}
+.messages button{
+    height:39px;
+    width:109px;
+    background: #5CAD77;
+    color:white;
+    border:0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*尾部*/
+.footer{
+    width:100%;
+    min-height:200px;
+    background: #363636;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.foot{
+    width:980px;
+    margin: 30px auto;
+}
+.foot .foot-content{
+    min-height: 100px;
+}
+ul.left{
+    min-height: 100px;
+    float:left;
+}
+ul.left li.row{
+    float: left;
+    margin-right:80px;
+}
+li.row dl dt{
+    color:#A6A6A6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+li.row dl dd a{
+    color:#828282;
+    text-decoration: none;
+}
+li.row dl dd a:hover{
+    text-decoration: underline;
+}
+ul.left li.row:nth-child(5) dl dd a{
+    color:#828282;
+    text-decoration: none;
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin-right: 10px;
+}
+li.row dl dd.img-1{
+    margin-bottom: 10px;
+}
+li.row dl dd.img-1 a:first-child{
+    background: url("../img/register/jlt-01.png") 0 -1080px no-repeat ;
+}
+li.row dl dd.img-1 a:nth-child(2){
+    background: url("../img/register/jlt-01.png") -30px -1080px no-repeat;
+}
+li.row dl dd.img-1 a:nth-child(3){
+    background: url("../img/register/jlt-01.png") -60px -1080px no-repeat;
+}
+li.row dl dd.img-2 a:first-child{
+    background: url("../img/register/jlt-01.png") 0 -1110px no-repeat;
+}
+li.row dl dd.img-2 a:nth-child(2){
+    background: url("../img/register/jlt-01.png") -30px -1110px no-repeat;
+}
+li.row dl dd.img-2 a:nth-child(3){
+    background: url("../img/register/jlt-01.png") -60px -1110px no-repeat;
+}
+.right{
+    width:146px;
+    height:48px;
+    background: url("../img/register/jlt-01.png") 0 -74px no-repeat;
+    margin-right: 101px;
+    float: right;
+}
+.adv{
+    margin-top: 25px;
+    display: inline-flex;
+    line-height: 16px;
+}
+.adv div.bottom-left{
+    width:110px;
+    height:40px;
+    background: url("../img/register/jlt-01.png") 0 -135px no-repeat;
+    margin-right: 10px;
+}
+.bottom-right{
+    color:#828282;
+    font-size: 13px;
+}
+.bottom-right div:first-child a{
+    color:#828282;
+    text-decoration: none;
+}
+.bottom-right div:last-child a{
+    color:#828282;
+    text-decoration: none;
+}
+.bottom-right div a:hover{
+    text-decoration: underline;
+}

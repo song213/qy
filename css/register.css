@@ -1,0 +1,278 @@
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+body{
+    font:14px "simhei",Arial,Helvetica,sans-serif;
+    color:#666;
+    margin:0;
+    padding:0;
+    /*background-color:#f5f5f5;*/
+    display:block;
+}
+.register{
+    width:100%;
+    height:980px;
+}
+.register .container{
+    width:100%;
+    height:780px;
+    background: url("../img/register/bg-1.jpg") no-repeat;
+    border-top: 1px solid transparent;
+}
+.container .inner{
+    width:380px;
+    min-height: 400px;
+    margin:50px auto;
+}
+.inner .title{
+    width:380px;
+    height:46px;
+    margin:50px auto;
+    text-align: center;
+}
+.inner .title img{
+    width:126px;
+    height:46px;
+}
+.inner .title span{
+    font-size: 25px;
+    color:white;
+    vertical-align: text-bottom;
+    text-shadow:0 0 4px rgba(0,0,0,.4);
+}
+.chart{
+    background: rgba(0,0,0,0.5);
+}
+.chart form{
+    padding:25px 25px 8px 25px;
+}
+form div.tel{
+    height:39px;
+}
+.tel input:first-child{
+    width:42px;
+    height:37px;
+    padding:0 20px 0 10px;
+    border:1px solid #dddddd;
+    background: white;
+}
+.tel input:last-child{
+    height:35px;
+    width:217px;
+    border:1px solid #dddddd;
+    padding:0 20px 0 10px;
+}
+.code{
+    height:39px;
+}
+.code input:first-child{
+    height:36px;
+    width:180px;
+    padding:0 20px 0 10px;
+    border:1px solid #dddddd;
+}
+.code img{
+    width:111px;
+    height:39px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.message{
+    height:39px;
+}
+.message input:first-child{
+    height:35px;
+    width:180px;
+    padding:0 20px 0 10px;
+    border:1px solid #dddddd;
+}
+.message button{
+    height:39px;
+    width:109px;
+    background: #5CAD77;
+    color:white;
+    border:0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#uname{
+    height:35px;
+    width:298px;
+    border:1px solid #dddddd;
+    padding:0 20px 0 10px;
+}
+#upwd{
+    height:35px;
+    width:298px;
+    border:1px solid #dddddd;
+    padding:0 20px 0 10px;
+}
+form a{
+    display: block;
+    height:35px;
+    width:326px;
+    text-align: center;
+    text-decoration: none;
+    background:#5CAD77 ;
+    color:white;
+    font-size: 19px;
+    border-radius: 4px;
+    line-height: 35px;
+}
+.bottom{
+    padding:15px 0;
+}
+.bottom .login{
+    margin-left: 22px;
+    padding-right: 22px;
+}
+.login{
+    color:white;
+}
+.login a {
+    color:#67E749;
+    text-decoration: none;
+}
+.login a:hover{
+    text-decoration: underline;
+}
+.agree{
+    color:white;
+}
+.agree a{
+    color:#67E749;
+    text-decoration: none;
+}
+.agree a:hover{
+    text-decoration: underline;
+}
+.vali-1{
+    margin:10px 0;
+    display: block;
+    height:20px;
+    color:red;
+}
+.vali-2{
+    margin:10px 0;
+    display: block;
+    height:20px;
+    color:red;
+}
+.vali-3{
+    margin:10px 0;
+    display: block;
+    height:20px;
+    color:red;
+}
+.vali-4{
+    margin:10px 0;
+    display: block;
+    height:20px;
+    color:red;
+}
+.vali-5{
+    margin:10px 0;
+    display: block;
+    height:20px;
+    color:red;
+}
+
+/*foot*/
+.footer{
+    width:100%;
+    min-height:200px;
+    background: #363636;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.foot{
+    width:980px;
+    margin: 30px auto;
+}
+.foot .foot-content{
+    min-height: 100px;
+}
+ul.left{
+    min-height: 100px;
+    float:left;
+}
+ul.left li.row{
+    float: left;
+    margin-right:80px;
+}
+li.row dl dt{
+    color:#A6A6A6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+li.row dl dd a{
+    color:#828282;
+    text-decoration: none;
+}
+li.row dl dd a:hover{
+    text-decoration: underline;
+}
+ul.left li.row:nth-child(5) dl dd a{
+    color:#828282;
+    text-decoration: none;
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin-right: 10px;
+}
+li.row dl dd.img-1{
+    margin-bottom: 10px;
+}
+li.row dl dd.img-1 a:first-child{
+    background: url("../img/register/jlt-01.png") 0 -1080px no-repeat ;
+}
+li.row dl dd.img-1 a:nth-child(2){
+    background: url("../img/register/jlt-01.png") -30px -1080px no-repeat;
+}
+li.row dl dd.img-1 a:nth-child(3){
+    background: url("../img/register/jlt-01.png") -60px -1080px no-repeat;
+}
+li.row dl dd.img-2 a:first-child{
+    background: url("../img/register/jlt-01.png") 0 -1110px no-repeat;
+}
+li.row dl dd.img-2 a:nth-child(2){
+    background: url("../img/register/jlt-01.png") -30px -1110px no-repeat;
+}
+li.row dl dd.img-2 a:nth-child(3){
+    background: url("../img/register/jlt-01.png") -60px -1110px no-repeat;
+}
+.right{
+    width:146px;
+    height:48px;
+    background: url("../img/register/jlt-01.png") 0 -74px no-repeat;
+    margin-right: 101px;
+    float: right;
+}
+.adv{
+    margin-top: 25px;
+    display: inline-flex;
+    line-height: 16px;
+}
+.adv div.bottom-left{
+    width:110px;
+    height:40px;
+    background: url("../img/register/jlt-01.png") 0 -135px no-repeat;
+    margin-right: 10px;
+}
+.bottom-right{
+    color:#828282;
+    font-size: 13px;
+}
+.bottom-right div:first-child a{
+    color:#828282;
+    text-decoration: none;
+}
+.bottom-right div:last-child a{
+    color:#828282;
+    text-decoration: none;
+}
+.bottom-right div a:hover{
+    text-decoration: underline;
+}

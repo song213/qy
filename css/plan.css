@@ -1,0 +1,748 @@
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,div{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font:14px "simhei",Arial,Helvetica,sans-serif;
+    color:#666;
+    margin:0;
+    padding:0;
+    /*background-color:#f5f5f5;*/
+    display:block;
+}
+.header{
+    /*position:absolute;*/
+    height:30px;
+    width:100%;
+    z-index:1000;
+    background: #323232;
+    position: fixed;
+}
+.header div.logo{
+    float:left;
+}
+.header div.logo a{
+    text-decoration: none;
+    color:#0073b6;
+}
+.header div.logo img{
+    width:58px;
+    height:18px;
+    margin-left:30px;
+    margin-top:6px;
+}
+.header ul.nav-list{
+    float:left;
+    /*display:flex;*/
+    padding-left:20px;
+    margin-top:-15px;
+    margin-bottom:10px;
+}
+.header ul.nav-list li:nth-child(3) a{
+    color:#10b041;
+}
+.header ul.nav-list li:hover a{
+    color:#10b041;
+}
+.header ul.nav-list li{
+    padding:18px 16px;
+    font-size: 16px;
+    font-weight:bold;
+    border-top:2px solid transparent;
+    position: relative;
+    float:left;
+}
+.header ul.nav-list li a{
+    color:white;
+    text-decoration: none;
+    background: transparent;
+}
+.drop-content div.drop-one{
+    width:168px;
+    background: white;
+    border-radius:6px;
+    position: absolute;
+    top:46px;
+    left:-10px;
+}
+.drop-content div.drop-one ul li{
+    padding:6px 39px 3px 9px;
+    font-size: 16px;
+    color:black;
+    font-weight: normal;
+    margin-bottom:5px;
+}
+.drop-content img{
+    position: absolute;
+    top:36px;
+    right:61px;
+}
+.drop-one ul li:hover{
+    background: #E3FAE1;
+    cursor: pointer;
+}
+.drop-reserve div.drop-two{
+    width: 113px;
+    background: white;
+    border-radius: 6px;
+    position:absolute;
+    top:46px;
+    left:9px;
+}
+.drop-reserve div.drop-two ul li{
+    padding:3px 39px 3px 9px;
+    font-size: 16px;
+    color:black;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.drop-reserve img{
+    position:absolute;
+    top:36px;
+    left:34px;
+}
+.drop-two ul li:hover{
+    background: #E3FAE1;
+    cursor: pointer;
+}
+.header div.search{
+    float:right;
+    width:39%;
+    height:100%;
+    /*display:flex;*/
+    /*justify-content: space-around;*/
+}
+.header div.search form{
+    width:230px;
+    margin-top:6px;
+    min-height:25px;
+}
+.header div.search form input{
+    border-radius: 5px;
+    height:17px;
+    width:70%;
+    border:0;
+    float:right;
+}
+.header div.search form a img{
+    transform: translate(207px,0);
+}
+.header div.search div.login{
+    float:right;
+    /*display:flex;*/
+    padding-left:20px;
+    width:270px;
+    /*justify-content: space-around;*/
+    position:absolute;
+    top:-2px;
+    right:5px;
+}
+.header div.search div.login a{
+    cursor: auto;
+    color:white;
+    padding:1px 4px;
+}
+.header div.search div.login a img{
+    width:22px;
+    height:22px;
+    margin-top:6px;
+}
+.header div.search div.login div.log{
+    /*display:flex;*/
+    /*justify-content: space-around;*/
+    width:160px;
+    margin-top:8px;
+    float:right;
+}
+.header div.search div.login div.log a{
+    font-size: 15px;
+    padding:10px 17px;
+}
+
+/*****************neck******************/
+.neck{
+    width:100%;
+}
+.neck div.neck-inner{
+    width:100%;
+    height:50px;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+}
+.neck-inner div:first-child{
+    width:170px;
+    position: absolute;
+    top:50px;
+}
+.neck-inner div a img{
+    width:130px;
+    height:42px;
+    margin-left:49px;
+    vertical-align: middle;
+    margin-top: -16px;
+    border:0;
+}
+.neck-inner div:last-child ul{
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    float:right;
+    margin-top:32px;
+}
+.neck-inner div:last-child ul li{
+    padding:13px 16px;
+    font-size:16px;
+    float:left;
+}
+.neck-inner div:last-child ul li a{
+    text-decoration: none;
+    color: #7d7d7d;
+}
+.plan_bg{
+    width:100%;
+    height:500px;
+    background-image: url("../img/plan/body/banner-2-bg.png");
+    margin-top: 30px;
+}
+.plan_bg-inner{
+    width:980px;
+    height:500px;
+    margin:0 auto;
+    border-top:50px solid transparent;
+}
+p.inner-title{
+    text-align: center;
+}
+p.inner-title span{
+   font-size: 42px;
+    font-weight: bold;
+    color:white;
+}
+.plan_bg-inner p:nth-child(2){
+    text-align: center;
+    font-size: 16px;
+    margin-top:10px;
+    color:white;
+}
+.animation{
+    width: 466px;
+    height:209px;
+    margin:0 auto;
+    display: block;
+    padding: 0 238px;
+    text-align: center;
+    position:relative;
+    -webkit-transform: rotateX(-3deg) rotateY(-2.64deg) translateZ(-200px);
+    -webkit-transition: all .5s linear;
+}
+.animation .sun{
+    width:45px;
+    height:45px;
+    position: absolute;
+    top:18px;
+    right:516px;
+    z-index: 11;
+}
+.animation .hill{
+    width:353px;
+    height:117px;
+    position: absolute;
+    top:14px;
+    right:296px;
+}
+.animation .road{
+    width:466px;
+    height:90px;
+    position: absolute;
+    top:129px;
+    right:242px;
+}
+.animation .cloud{
+    width:415px;
+    height:58px;
+    position: absolute;
+    top:29px;
+    right:254px;
+}
+.animation .tree{
+    width:379px;
+    height:48px;
+    position: absolute;
+    top:88px;
+    right:285px;
+}
+.animation .stone{
+    width:350px;
+    height:23px;
+    position: absolute;
+    top:156px;
+    right:298px;
+}
+.animation .shadow{
+    width:23px;
+    height:7px;
+    position: absolute;
+    top:152px;
+    right:456px;
+}
+.animation .locate{
+    width:40px;
+    height:48px;
+    position: absolute;
+    top:100px;
+    right:448px;
+    -webkit-animation: locate 3s 0s linear infinite normal ;
+}
+@keyframes locate{
+    0%{
+        top:30px;
+    }
+    50%{
+        top:110px;
+    }
+    100%{
+        top:30px;
+    }
+}
+.btn{
+    width:295px;
+    height:125px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top:20px;
+}
+.btn button.slide-btn{
+    width:220px;
+    height:40px;
+    border:0;
+    border-radius: 4px;
+    background: white;
+}
+button.slide-btn a{
+    color:#41C074;
+}
+.btn-inner button{
+    display: block;
+    margin:0 auto;
+    width:220px;
+    height:40px;
+    background: transparent;
+    border-radius: 4px;
+    border:1px solid #ffffff;
+}
+.btn-inner button a{
+    color: #ffffff;
+}
+.btn-inner button:hover{
+    background: #37BB6C;
+}
+
+/*****************guide*********************/
+.guide{
+    width:980px;
+    margin:70px auto;
+    min-height: 300px;
+}
+.guide h3{
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    margin: 70px 0;
+}
+.guides{
+    width:978px;
+    min-height:300px;
+    border:1px solid #DDDDDD;
+}
+.guides .guide-content{
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    position: relative;
+    padding:10px 130px 10px 0 ;
+    border-bottom: 1px dashed #dddddd;
+}
+div.guide-content>div{
+    display: inline-block;
+    cursor: pointer;
+}
+.guide-content .guide-title{
+    width:12%;
+    height:36px;
+    float:left;
+    text-align: right;
+    line-height: 36px;
+    /*padding: 10px 10px;*/
+    /*margin-left: 30px;*/
+}
+.guide-inner{
+    overflow: hidden;
+    width:88%;
+    height:36px;
+    line-height: 36px;
+}
+.guide-inner1{
+    overflow: hidden;
+    width:88%;
+    height:36px;
+    line-height: 36px;
+}
+.guide-inner2{
+    overflow: hidden;
+    width:88%;
+    height:36px;
+    line-height: 36px;
+}
+.guide-inner3{
+    overflow: hidden;
+    width:88%;
+    height:36px;
+    line-height: 36px;
+}
+.guide-content .guide-inner ul{
+    flex-flow: wrap;
+    float:left;
+}
+.guide-content .guide-inner1 ul{
+    flex-flow: wrap;
+    float:left;
+}
+.guide-content .guide-inner2 ul{
+    flex-flow: wrap;
+    float:left;
+}
+.guide-content .guide-inner3 ul{
+    flex-flow: wrap;
+    float:left;
+}
+.guide-inner ul li{
+    padding:0 20px 10px 20px;
+    float:left;
+}
+.guide-inner1 ul li{
+    padding:0 20px 10px 20px;
+    float:left;
+}
+.guide-inner2 ul li{
+    padding:0 20px 10px 20px;
+    float:left;
+}
+.guide-inner3 ul li{
+    padding:0 20px 10px 20px;
+    float:left;
+}
+.guide-inner ul li a{
+    color:#323232;
+}
+.guide-inner1 ul li a{
+    color:#323232;
+}
+.guide-inner3 ul li a{
+    color:#323232;
+}
+.guide-inner2 ul li a{
+    color:#323232;
+}
+.guide-more{
+    position: absolute;
+    bottom:22px;
+    left:877px;
+}
+.guide-more1{
+    padding:10px 19px;
+    margin-left:77px;
+    width:5%;
+}
+.guide-more3{
+    padding:10px 19px;
+    margin-left:77px;
+    cursor: pointer;
+    position: absolute;
+    bottom:12px;
+    left:795px;
+}
+.guide-more a.more{
+    color:#959595;
+    background: url("../img/plan/body/xiajiantou.jpg") no-repeat 0 -1px;
+    padding-left: 20px;
+    display: block;
+}
+.guide-more a.more1{
+    color:#959595;
+    background: url("../img/plan/body/xiajiantou.jpg") no-repeat 0 -1px;
+    padding-left: 20px;
+    display: block;
+}
+.guide-more3 a{
+    color:#959595;
+    background: url("../img/plan/body/jiahao.jpg") no-repeat 0 -1px;
+    padding-left: 20px;
+}
+.guide-more a.less{
+    color:#959595;
+    display: none;
+    background:url("../img/plan/body/shangjiantou.jpg") no-repeat 0 -1px;
+    padding-left: 20px;
+}
+.guide-more a.less1{
+    color:#959595;
+    display: none;
+    background:url("../img/plan/body/shangjiantou.jpg") no-repeat 0 -1px;
+    padding-left: 20px;
+}
+.choose-btn{
+    text-align: center;
+    margin-top:20px;
+}
+.choose-btn .sure{
+    background: #3F9F5F;
+    border:0;
+    color:white;
+    width:58px;
+    height:28px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.choose-btn .cancel{
+    width:58px;
+    height:28px;
+    border-radius: 4px;
+    border:1px solid #959595;
+    cursor: pointer;
+}
+
+/******************行程浏览*********************/
+.guide-pic{
+    width:980px;
+    height:1870px;
+    margin:0 auto;
+    position: relative;
+}
+.nav{
+   height:30px;
+    line-height: 30px;
+}
+.nav div:first-child{
+    float: left;
+}
+.nav div:first-child a{
+    color: #959595;
+}
+.nav div:first-child a:first-child{
+    color:#0073B6;
+    font-size: 16px;
+}
+.nav div:last-child{
+    float: right;
+}
+.nav div:last-child span{
+    color:#959595;
+}
+.nav div:last-child input{
+    width:180px;
+    height:23px;
+    border:1px solid silver;
+    background: url("../img/plan/body/search.jpg") no-repeat;
+    padding-left:20px;
+    border-radius: 4px;
+}
+.pic-list{
+    width:1004px;
+    height:1770px;
+    position: absolute;
+}
+.item{
+    float:left;
+    margin:24px 22px 0 0;
+    border:1px solid #959595;
+    border-radius: 8px;
+    width:310px;
+    height:328px;
+}
+.item .img{
+    position: relative;
+    width:310px;
+    height:202px;
+    overflow: hidden;
+}
+.item .img img{
+    width:310px;
+    height:202px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: all 1s linear;
+}
+.item .img:hover img{
+    transform:scale(1.3) ;
+    cursor:pointer;
+}
+.img .title{
+    position: absolute;
+    top:140px;
+    left:16px;
+    text-shadow:0 5px 5px rgba(0,0,0,0.5);
+}
+.title .day{
+    float:left;
+    color:white;
+}
+.day strong{
+    font-size: 50px;
+    color:white;
+    font-weight: normal;
+}
+.title .date{
+    float:right;
+    color:white;
+    border-left:1px solid white;
+    padding:8px 18px;
+    margin:3px 0 0 20px;
+    font-size:16px;
+    width:168px;
+    overflow: hidden;
+}
+.item .content{
+    height:105px;
+    padding:10px 15px;
+}
+.content .place{
+    font-size: 15px;
+    color:#000000;
+    margin-top:15px;
+    height:48px;
+    overflow: hidden;
+    line-height: 19px;
+}
+
+.content .person{
+    margin-top: 21px;
+}
+.person div:first-child{
+    float: left;
+    background: url("../img/plan/body/user.jpg") no-repeat;
+    padding-left: 15px;
+    color:#0073B6;
+    cursor: pointer;
+}
+.person div:first-child:hover{
+    text-decoration: underline;
+}
+.person div:last-child{
+    float: right;
+}
+.person div:last-child span:first-child{
+    background: url("../img/plan/body/eye.jpg") no-repeat;
+    padding-left: 20px;
+}
+.person div:last-child span:last-child{
+    background: url("../img/plan/body/note.jpg") no-repeat 1px -1px;
+    padding-left: 20px;
+}
+.page{
+   position: absolute;
+   bottom:24px;
+   right:0;
+   width:100%;
+   text-align: right;
+}
+.page-btn{
+    float: right;
+}
+.page-btn a{
+    padding:0 3px;
+    color:#636363;
+    font-size: 16px;
+}
+.page-btn a:hover{
+    background: #e0f1e1;
+    cursor: pointer;
+}
+.page-btn a.current{
+    display: inline-block;
+    background: #5ea67c;
+    color:white;
+    border-radius: 3px;
+}
+
+/**路线推荐**/
+.route{
+    width:100%;
+    background: #f8f8f8;
+    margin-top: 50px;
+    min-height: 548px;
+}
+.route dl{
+    width: 980px;
+    margin:0 auto;
+    display: block;
+}
+.route dl dt{
+    height:50px;
+    font-size: 20px;
+    padding-top: 10px;
+    line-height: 50px;
+    color: #636363;
+}
+.route dd{
+    float:left;
+    width:127px;
+    height:30px;
+    line-height: 30px;
+    margin-right: 25px;
+}
+dd a{
+    color: #9d9d9d;
+}
+/*清除浮动*/
+.route dt{
+    clear: both;
+}
+
+/*foot*/
+.footer{
+    margin:auto 0;
+    background: #323232;
+    min-height: 124px;
+}
+.footer div.topline{
+    background: #28b76c;
+    height:3px;
+}
+.foot{
+    margin: 0 auto;
+    width:980px;
+}
+.foot ul.nav{
+    margin: 30px 0 20px 0;
+}
+.foot ul.nav li{
+    float:left;
+}
+.foot ul.nav a{
+    color:white;
+    text-decoration: none;
+    padding:0 10px;
+    border-left:1px solid #636363;
+}
+.foot ul.nav li:first-child a{
+    border-left:2px solid #28b76c;
+}
+.foot .info{
+    text-align: left;
+    font-size:13px;
+    height:20px;
+}
+p.info a{
+    color:#5C5D5D;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
