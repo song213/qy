@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QY</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!--导航栏-->
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="img/header/logo.png" alt="">
+            </a>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="destination.html">目的地</a>
+            </li>
+            <li>
+                <a href="guide.html">锦囊</a>
+            </li>
+            <li>
+                <a href="plan.html">行程助手</a>
+            </li>
+            <li id="community">
+                <a href="#">社区</a>
+                <img src="img/header/xiajiantou.png" alt="">
+                <div class="drop-content" style="display: none">
+                    <img src="img/header/shangsanjiao.png" alt="">
+                    <div class="drop-one" >
+                        <ul>
+                            <li title="旅行论坛">旅行论坛</li>
+                            <li title="旅行问答">旅行问答</li>
+                            <li title="JNE旅行生活美学">JNE旅行生活美学</li>
+                            <li title="特别策划">特别策划</li>
+                            <li title="负责任的旅行">负责任的旅行</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#">商城</a>
+            </li>
+            <li>
+                <a href="#">机票</a>
+            </li>
+            <li id="reserve">
+                <a href="#">预定</a>
+                <img src="img/header/xiajiantou.png" alt="">
+                <div class="drop-reserve" style="display: none">
+                    <img src="img/header/shangsanjiao.png" alt="">
+                    <div class="drop-two">
+                        <ul>
+                            <li title="特价酒店">特价酒店</li>
+                            <li title="爱彼迎">爱彼迎</li>
+                            <li title="保险">保险</li>
+                            <li title="华人旅馆">华人旅馆</li>
+                            <li title="邮轮">邮轮</li>
+                            <li title="租车">租车</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="search">
+            <div>
+                <form action="">
+                    <input type="text" class="search-box" id="search-box"
+                        style="display: none">
+                    <a href="#">
+                        <img src="img/header/search.png" alt="" id="search">
+                    </a>
+                </form>
+            </div>
+            <div class="login">
+                <a href="#">
+                    <img src="img/header/qq.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/header/weibo.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/header/weixin.png" alt="">
+                </a>
+                <div class="log">
+                    <a href="register.html">注册</a>
+                    <a href="login.html">登录</a>
+                </div>
+            </div>
+        </div>
+        <div class="seek">
+            <div class="list">
+                <a href="#">目的地</a>
+                <a href="#">做行程</a>
+                <a href="#">买折扣</a>
+                <a href="#">酒店</a>
+            </div>
+            <div class="search-middle">
+                <form action="">
+                    <input type="text" placeholder="你要去哪儿" id="seek">
+                </form>
+                <button>搜索</button>
+                <!-- style="display:none"-->
+                <div class="search-list" style="display:none">
+                   <div class="hot-city">
+                       <span>热门城市</span>
+                   </div>
+                    <div class="cities">
+                        <a href="#">香港</a>
+                        <a href="#">曼谷</a>
+                        <a href="#">东京</a>
+                        <a href="#">澳门</a>
+                        <a href="#">首尔</a>
+                        <a href="#">京都</a>
+                        <a href="#">大阪</a>
+                        <a href="#">台湾</a>
+                        <a href="#">巴黎</a>
+                        <a href="#">罗马</a>
+                        <a href="#">清迈</a>
+                        <a href="#">新加坡</a>
+                        <a href="#">台北</a>
+                        <a href="#">吉隆坡</a>
+                        <a href="#">威尼斯</a>
+                        <a href="#">普吉岛</a>
+                        <a href="#">洛杉矶</a>
+                        <a href="#">米兰</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--轮播-->
+    <div class="container" style="margin:0 auto; width:100%; padding:0">
+        <div id="ad" class="carousel" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/carousel/1.jpg">
+                </div>
+                <div class="item">
+                    <img src="img/carousel/2.jpg">
+                </div>
+                <div class="item">
+                    <img src="img/carousel/3.jpg">
+                </div>
+                <div class="item">
+                    <img src="img/carousel/4.jpg">
+                </div>
+            </div>
+            <!--上一页/下一页-->
+            <a href="#ad" class="carousel-control left" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#ad" class="carousel-control right" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            <!--分页的页码-->
+            <ul class="carousel-indicators">
+                <li data-slide-to="0" data-target="#ad" class="active"></li>
+                <li data-slide-to="1" data-target="#ad"></li>
+                <li data-slide-to="2" data-target="#ad"></li>
+                <li data-slide-to="3" data-target="#ad"></li>
+            </ul>
+        </div>
+    </div>
+    <!--广告-->
+    <div class="ads">
+        <div class="ads-1">
+            <img src="img/ads/110.jpg" alt="">
+            <img src="img/ads/111.jpg" alt="">
+        </div>
+    </div>
+    <!--推荐-->
+    <div class="f1">
+        <div>
+            <h1>今日推荐</h1>
+        </div>
+        <div class="recommend">
+            <div class="rec-list">
+                <div class="item">
+                    <dl>
+                        <dt>
+                            <a href="#">
+                                <img src="img/recommond/1.jpg" alt="">
+                                <div class="tag">
+                                    <span>游记</span>
+                                </div>
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="#">
+                                在旅途中慢慢变老，是人生一大幸事！大龄背包客搭火车环欧六国
+                                终极游
+                            </a>
+                        </dd>
+                        <dd>
+                            <span>慕贤</span>
+                            <span>48057人浏览过</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="item">
+                    <dl>
+                        <dt>
+                            <a href="#">
+                                <img src="img/recommond/2.jpg" alt="">
+                                <div class="tag">
+                                    <span>折扣</span>
+                                </div>
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="#">
+                                [11月06日]诺唯真邮轮喜悦号上海往返海上狂欢4天3晚邮轮之旅
+                            </a>
+                        </dd>
+                        <dd>
+                            <span>上海</span>
+                            <span>
+                                <em>1826</em>
+                                元起
+                            </span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="item">
+                    <dl>
+                        <dt>
+                            <a href="#">
+                                <img src="img/recommond/3.jpg" alt="">
+                                <div class="tag">
+                                    <span>游记</span>
+                                </div>
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="#">
+                                【罗德视界】南极行纪
+                            </a>
+                        </dd>
+                        <dd>
+                            <span>罗德rigo</span>
+                            <span>52461人浏览过</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="login">
+                    <div class="login-title">
+                        <h3>让我们更懂你</h3>
+                        <p>拥有穷游账号，获得更准确的推荐</p>
+                    </div>
+                    <div class="login-link">
+                        <button>登录</button>
+                        <span>
+                            已有账号？
+                            <a href="#">登录</a>
+                        </span>
+                    </div>
+                    <div class="auto-login">
+                        <a href="#">使用邮箱注册</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <dl>
+                        <dt>
+                            <a href="#">
+                                <img src="img/recommond/4.jpg" alt="">
+                                <div class="tag">
+                                    <span>折扣</span>
+                                </div>
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="#">
+                                [抽奖送Iphone8]北京出发马尔代夫卓美亚维塔维丽JV岛6-7天自由行
+                                （豪华6星/L型泳池/儿童免费/独家赠双人SPA）
+                            </a>
+                        </dd>
+                        <dd>
+                            <span>北京</span>
+                            <span>
+                                <em>18593</em>
+                                元起
+                            </span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="item">
+                    <dl>
+                        <dt>
+                            <a href="#">
+                                <img src="img/recommond/5.jpg" alt="">
+                                <div class="tag">
+                                    <span>微锦囊</span>
+                                </div>
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="#">
+                                去新西兰想玩得与众不同，一定不能错过的10件事
+                            </a>
+                        </dd>
+                        <dd>
+                            <span>租租车</span>
+                            <span>推荐了10个目的地</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="item">
+                    <dl>
+                        <dt>
+                            <a href="#">
+                                <img src="img/recommond/6.jpg" alt="">
+                                <div class="tag">
+                                    <span>游记</span>
+                                </div>
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="#">
+                                【开往布列瑟农的列车】混搭的秋日意大利（罗马，托斯卡纳，多洛米蒂，
+                                加尔达湖，顶级庄园，Airbnb，米其林三星，自驾）完
+                            </a>
+                        </dd>
+                        <dd>
+                            <span>mariafe</span>
+                            <span>144989人浏览过</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="item">
+                    <dl>
+                        <dt>
+                            <a href="#">
+                                <img src="img/recommond/7.jpg" alt="">
+                                <div class="tag">
+                                    <span>游记</span>
+                                </div>
+                            </a>
+                        </dt>
+                        <dd>
+                            <a href="#">
+                                《美西露营记》- 国家公园露营攻略和摄影心得
+                            </a>
+                        </dd>
+                        <dd>
+                            <span>Vincent_chen_cc</span>
+                            <span>26291人浏览过</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--穷游商城-->
+    <div class="f2">
+        <div class="cheap-malls">
+            <h1>穷游商城</h1>
+            <div class="mall-1" style="display: block">
+                <div class="poor-tour" id="p1">
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/2-1.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                美国个人旅游签证(全国受理,可加急办理,EVUS更新,
+                                顺丰包回邮)
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>长久有效</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">签证</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>1888</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/2-2.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                加拿大个人旅游签证(全国收取)
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2016/06-2017/06</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">签证</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>654</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/2-3.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                美国洛杉矶迪士尼乐园1日1园实体/电子票(全国包邮)
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/05-2018/07</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>759</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/2-4.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                【潮人必选】粉红吉普Pink Jeep拉斯维加斯市
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2016/08-2017/10</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>540</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/2-5.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                【权利的游戏拍摄地之一】西班牙塞维利亚王宫
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/01-2018/09</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>30</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/2-6.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                【北京领区,限量抢购】日本个人旅游签证(单次/多次/简化办理;拒签退款)
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>长久有效</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">签证</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>285</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mall-1" style="display: none">
+                <div class="poor-tour" id="p2">
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/3-1.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                (四星，芭东海滩)普吉岛安达曼海滩套房酒店
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/04-2018/10</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">酒店</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>200</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/3-2.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                荷兰阿姆斯特丹伦博朗之家博物馆门票
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/06-2019/06</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>30</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/3-3.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                印尼巴厘岛美利亚酒店特惠酒店住宿（含双早）
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2016/05-2019/07</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">酒店</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>800</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/3-4.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                美国华盛顿杜莎夫人蜡像馆门票
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/08-2017/10</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>40</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/3-5.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                【拒签全退|端午假期】上海直飞东京/大阪/名古
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/01-2018/09</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">机票</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>700</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/3-6.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                新加坡国立胡姬兰花园电子门票兑换卷
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2018/01-2019/01</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>100</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mall-1" style="display: none">
+                <div class="poor-tour" id="p3">
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/4-1.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                （四星，北谷）日本冲绳坎帕纳船舶酒店Vessel Hotel
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/07-2017/09</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">酒店</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>890</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/4-2.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                普吉岛诺富特吉度假酒店 特惠住宿（含双早）
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2016/06-2017/06</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">酒店</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>500</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/4-3.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                日本京都塔楼酒店"塔凉台"餐厅自助晚餐（90分
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2016/05-2018/07</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>50</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/4-4.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                （四星，香港岛区）香港南湾海景酒店L'Hotel
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/08-2017/10</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">酒店</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>540</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/4-5.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                【流动的城市坐标】新西兰唯一公共缆车-惠玲顿缆
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/01-2018/09</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>50</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/5-6.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                京都怀石烤肉专门店"弘"预约服务(9家店
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/04-2018/12</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>200</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mall-1" style="display: none">
+                <div class="poor-tour" id="p4">
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/5-1.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                (四星，近夜市)清迈东他挽酒店Duangtawan Hotel
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/04-2018/06</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">酒店</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>500</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/5-2.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                【吃货必去】日本东京板前寿司预约服务(3家店
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/06-2017/07</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>30</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/5-3.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                (三星，南澳海滩)泰国甲米奥南维瓦度假酒店
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/05-2018/06</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">酒店</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>240</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/5-4.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                【中文讲解】新西兰惠灵顿蒂帕帕东加雷瓦国际博
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2016/08-2017/10</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>20</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/5-5.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                (五星,路凼)澳门巴黎人酒店The Parisian
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>2017/01-2018/09</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">酒店</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>210</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/qysc/5-6.jpg" alt="">
+                        </a>
+                        <div class="pic-inner">
+                            <div class="title">
+                                京都怀石烤肉专门店"弘"预约服务(9家店
+                            </div>
+                            <div class="qz">
+                                <div class="time">
+                                    <span>长久有效</span>
+                                </div>
+                                <div class="tag">
+                                    <a href="#">城市乐玩</a>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <em>20</em>元起
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-btn">
+                <a href="#" class="bt1 active"></a>
+                <a href="#" class="bt1"></a>
+                <a href="#" class="bt1"></a>
+                <a href="#" class="bt1"></a>
+            </div>
+            <div class="more-btn">
+                <a href="#">
+                    <button>查看更多折扣</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--热门游记与话题-->
+    <div class="f3">
+        <h1>热门游记与话题</h1>
+        <div class="hot-tip" id="tip1">
+            <div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/1.jpg" alt="" class="img-1"
+                                     title="今日话题 | 说说你做过最不游客的事情">
+                            </a>
+                            <a href="#">38</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s0.png"
+                                        title="今日话题 | 说说你做过最不游客的事情">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="穷游大秘书">
+                                    穷游大秘书
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="今日话题 | 说说你做过最不游客的事情">
+                                今日话题 | 说说你做过最不游客的事情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/1-1.jpg" alt="" class="img-1"
+                                     title=" 这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)">
+                            </a>
+                            <a href="#">25</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s1.jpg"
+                                         title=" 这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="皮卡丘">
+                                    皮卡丘
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title=" 这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)">
+                                这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/1-8.jpg" alt="" class="img-1"
+                                     title="从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                                     中欧三国四地仲夏漫游记？">
+                            </a>
+                            <a href="#">12</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s2.jpg"
+                                         title="从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                                         中欧三国四地仲夏漫游记？">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="帅到爆咋">
+                                    帅到爆咋
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                            中欧三国四地仲夏漫游记？">
+                                从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                                中欧三国四地仲夏漫游记？
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/1-3.jpg" alt="" class="img-1"
+                                     title="神秘的南美，天空之境与远古之石">
+                            </a>
+                            <a href="#">34</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s3.jpg"
+                                         title="神秘的南美，天空之境与远古之石">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="孤独风中一匹狼">
+                                    孤独风中一匹狼
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="神秘的南美，天空之境与远古之石">
+                                神秘的南美，天空之境与远古之石
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/1-4.jpg" alt="" class="img-1"
+                                     title="超级干货：我给全球所有民航局群发了375封邮件，
+                                     询问无人机法规">
+                            </a>
+                            <a href="#">21</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s4.jpg"
+                                         title="超级干货：我给全球所有民航局群发了375封邮件，
+                                         询问无人机法规">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="半夏微凉">
+                                    半夏微凉
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="超级干货：我给全球所有民航局群发了375封邮件，
+                            询问无人机法规">
+                                超级干货：我给全球所有民航局群发了375封邮件，询问无人机法规
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/1-5.jpg" alt="" class="img-1"
+                                     title="初夏关东，七日漫步东京(含东京附近刷三年签方法，
+                                     超大信息量情报 &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                            </a>
+                            <a href="#">43</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s5.jpg"
+                                         title="初夏关东，七日漫步东京(含东京附近刷三年签方法，
+                                         超大信息量情报 &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="柠檬很酸">
+                                    柠檬很酸
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="初夏关东，七日漫步东京(含东京附近刷三年签方法，超大信息量情报
+                            &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                                初夏关东，七日漫步东京(含东京附近刷三年签方法，超大信息量情报
+                                &文化知识，行程建议，东京地区经典机位拍摄全过程)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/1-6.jpg" alt="" class="img-1"
+                                     title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                                     自驾篇附全程GPS">
+                            </a>
+                            <a href="#">23</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s6.jpg"
+                                         title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                                         自驾篇附全程GPS">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="蓝色海洋传说">
+                                    蓝色海洋传说
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                            自驾篇附全程GPS">
+                                【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】自驾篇附全程GPS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/1-7.jpg" alt="" class="img-1"
+                                     title="【中国老司机 自驾游全球】夏威夷芈月游
+                                     (欧胡岛+大岛自驾)11天">
+                            </a>
+                            <a href="#">23</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s7.jpg"
+                                         title="【中国老司机 自驾游全球】夏威夷芈月游
+                                         (欧胡岛+大岛自驾)11天">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="布衣天使">
+                                    布衣天使
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="【中国老司机 自驾游全球】夏威夷芈月游
+                            (欧胡岛+大岛自驾)11天">
+                                【中国老司机 自驾游全球】夏威夷芈月游(欧胡岛+大岛自驾)11天
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hot-tip" id="tip2">
+            <div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/2-1.jpg" alt="" class="img-1"
+                                     title="漂洋过海来看你，十一天新西兰南岛圆梦之旅">
+                            </a>
+                            <a href="#">12</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s8.jpg"
+                                         title="漂洋过海来看你，十一天新西兰南岛圆梦之旅">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="漂漂小怪兽">
+                                    漂漂小怪兽
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="漂洋过海来看你，十一天新西兰南岛圆梦之旅">
+                                漂洋过海来看你，十一天新西兰南岛圆梦之旅
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/2-2.jpg" alt="" class="img-1"
+                                     title="珍藏于心底的挚爱，多洛米蒂！2016意大利一任欢快的纵情之旅">
+                            </a>
+                            <a href="#">25</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s10.jpg"
+                                         title="珍藏于心底的挚爱，多洛米蒂！2016意大利一任欢快的纵情之旅">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="简单就好">
+                                    简单就好
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title=" 珍藏于心底的挚爱，多洛米蒂！2016意大利一任欢快的纵情之旅">
+                                珍藏于心底的挚爱，多洛米蒂！2016意大利一任欢快的纵情之旅
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/2-3.jpg" alt="" class="img-1"
+                                     title="前往最远方 - 智利圣地亚哥，复活节岛">
+                            </a>
+                            <a href="#">12</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s11.jpg"
+                                         title="前往最远方 - 智利圣地亚哥，复活节岛">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="年年">
+                                    年年
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="前往最远方 - 智利圣地亚哥，复活节岛">
+                                前往最远方 - 智利圣地亚哥，复活节岛
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/1-2.jpg" alt="" class="img-1"
+                                     title="神秘的南美，天空之境与远古之石">
+                            </a>
+                            <a href="#">34</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s12.jpg"
+                                         title="神秘的南美，天空之境与远古之石">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="孤独风中一匹狼">
+                                    孤独风中一匹狼
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="神秘的南美，天空之境与远古之石">
+                                神秘的南美，天空之境与远古之石
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/2-4.jpg" alt="" class="img-1"
+                                     title="超级干货：我给全球所有民航局群发了375封邮件，
+                                     询问无人机法规">
+                            </a>
+                            <a href="#">21</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s13.jpg"
+                                         title="超级干货：我给全球所有民航局群发了375封邮件，
+                                         询问无人机法规">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="半夏微凉">
+                                    半夏微凉
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="超级干货：我给全球所有民航局群发了375封邮件，
+                            询问无人机法规">
+                                超级干货：我给全球所有民航局群发了375封邮件，询问无人机法规
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/2-5.jpg" alt="" class="img-1"
+                                     title="初夏关东，七日漫步东京(含东京附近刷三年签方法，
+                                     超大信息量情报 &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                            </a>
+                            <a href="#">43</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s14.jpg"
+                                         title="初夏关东，七日漫步东京(含东京附近刷三年签方法，
+                                         超大信息量情报 &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="柠檬很酸">
+                                    柠檬很酸
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="初夏关东，七日漫步东京(含东京附近刷三年签方法，超大信息量情报
+                            &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                                初夏关东，七日漫步东京(含东京附近刷三年签方法，超大信息量情报
+                                &文化知识，行程建议，东京地区经典机位拍摄全过程)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/2-6.jpg" alt="" class="img-1"
+                                     title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                                     自驾篇附全程GPS">
+                            </a>
+                            <a href="#">23</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s15.jpg"
+                                         title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                                         自驾篇附全程GPS">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="蓝色海洋传说">
+                                    蓝色海洋传说
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                            自驾篇附全程GPS">
+                                【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】自驾篇附全程GPS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/2-7.jpg" alt="" class="img-1"
+                                     title="【中国老司机 自驾游全球】夏威夷芈月游
+                                     (欧胡岛+大岛自驾)11天">
+                            </a>
+                            <a href="#">23</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s16.jpg"
+                                         title="【中国老司机 自驾游全球】夏威夷芈月游
+                                         (欧胡岛+大岛自驾)11天">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="布衣天使">
+                                    布衣天使
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="【中国老司机 自驾游全球】夏威夷芈月游
+                            (欧胡岛+大岛自驾)11天">
+                                【中国老司机 自驾游全球】夏威夷芈月游(欧胡岛+大岛自驾)11天
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hot-tip" id="tip3">
+            <div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/2-7.jpg" alt="" class="img-1"
+                                     title="今日话题 | 说说你做过最不游客的事情">
+                            </a>
+                            <a href="#">38</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s17.jpg"
+                                         title="今日话题 | 说说你做过最不游客的事情">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="pipa">
+                                    pipa
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="今日话题 | 说说你做过最不游客的事情">
+                                今日话题 | 说说你做过最不游客的事情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/3-1.jpg" alt="" class="img-1"
+                                     title=" 这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)">
+                            </a>
+                            <a href="#">25</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s18.jpg"
+                                         title=" 这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="皮卡丘">
+                                    皮卡丘
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title=" 这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)">
+                                这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/3-2.jpg" alt="" class="img-1"
+                                     title="从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                                     中欧三国四地仲夏漫游记？">
+                            </a>
+                            <a href="#">12</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s19.jpg"
+                                         title="从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                                         中欧三国四地仲夏漫游记？">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="帅到爆咋">
+                                    帅到爆咋
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                            中欧三国四地仲夏漫游记？">
+                                从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                                中欧三国四地仲夏漫游记？
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/3-3.jpg" alt="" class="img-1"
+                                     title="神秘的南美，天空之境与远古之石">
+                            </a>
+                            <a href="#">34</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s20.jpg"
+                                         title="神秘的南美，天空之境与远古之石">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="孤独风中一匹狼">
+                                    孤独风中一匹狼
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="神秘的南美，天空之境与远古之石">
+                                神秘的南美，天空之境与远古之石
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/3-4.jpg" alt="" class="img-1"
+                                     title="超级干货：我给全球所有民航局群发了375封邮件，
+                                     询问无人机法规">
+                            </a>
+                            <a href="#">21</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s21.jpg"
+                                         title="超级干货：我给全球所有民航局群发了375封邮件，
+                                         询问无人机法规">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="半夏微凉">
+                                    半夏微凉
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="超级干货：我给全球所有民航局群发了375封邮件，
+                            询问无人机法规">
+                                超级干货：我给全球所有民航局群发了375封邮件，询问无人机法规
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/3-5.jpg" alt="" class="img-1"
+                                     title="初夏关东，七日漫步东京(含东京附近刷三年签方法，
+                                     超大信息量情报 &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                            </a>
+                            <a href="#">43</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s22.jpg"
+                                         title="初夏关东，七日漫步东京(含东京附近刷三年签方法，
+                                         超大信息量情报 &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="柠檬很酸">
+                                    柠檬很酸
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="初夏关东，七日漫步东京(含东京附近刷三年签方法，超大信息量情报
+                            &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                                初夏关东，七日漫步东京(含东京附近刷三年签方法，超大信息量情报
+                                &文化知识，行程建议，东京地区经典机位拍摄全过程)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/3-6.jpg" alt="" class="img-1"
+                                     title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                                     自驾篇附全程GPS">
+                            </a>
+                            <a href="#">23</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s23.jpg"
+                                         title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                                         自驾篇附全程GPS">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="蓝色海洋传说">
+                                    蓝色海洋传说
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                            自驾篇附全程GPS">
+                                【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】自驾篇附全程GPS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/hotTip/3-7.jpg" alt="" class="img-1"
+                                     title="【中国老司机 自驾游全球】夏威夷芈月游
+                                     (欧胡岛+大岛自驾)11天">
+                            </a>
+                            <a href="#">23</a>
+                        </div>
+                    </div>
+                    <div class="tip-inner">
+                        <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s24.jpg"
+                                         title="【中国老司机 自驾游全球】夏威夷芈月游
+                                         (欧胡岛+大岛自驾)11天">
+                                </a>
+                            </span>
+                            <span class="avatar-name">
+                                <a href="#" title="布衣天使">
+                                    布衣天使
+                                </a>
+                            </span>
+                        </div>
+                        <div class="tip-title">
+                            <a href="#" title="【中国老司机 自驾游全球】夏威夷芈月游
+                            (欧胡岛+大岛自驾)11天">
+                                【中国老司机 自驾游全球】夏威夷芈月游(欧胡岛+大岛自驾)11天
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hot-tip" id="tip4">
+        <div>
+            <div class="tip">
+                <div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="img/hotTip/3-8.jpg" alt="" class="img-1"
+                                 title="今日话题 | 说说你做过最不游客的事情">
+                        </a>
+                        <a href="#">38</a>
+                    </div>
+                </div>
+                <div class="tip-inner">
+                    <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s24.jpg"
+                                         title="今日话题 | 说说你做过最不游客的事情">
+                                </a>
+                            </span>
+                        <span class="avatar-name">
+                                <a href="#" title="穷游大秘书">
+                                    穷游大秘书
+                                </a>
+                            </span>
+                    </div>
+                    <div class="tip-title">
+                        <a href="#" title="今日话题 | 说说你做过最不游客的事情">
+                            今日话题 | 说说你做过最不游客的事情
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tip">
+                <div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="img/hotTip/4-1.jpg" alt="" class="img-1"
+                                 title=" 这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)">
+                        </a>
+                        <a href="#">25</a>
+                    </div>
+                </div>
+                <div class="tip-inner">
+                    <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s25.jpg"
+                                         title=" 这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)">
+                                </a>
+                            </span>
+                        <span class="avatar-name">
+                                <a href="#" title="皮卡丘">
+                                    皮卡丘
+                                </a>
+                            </span>
+                    </div>
+                    <div class="tip-title">
+                        <a href="#" title=" 这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)">
+                            这是一个不寻常的海岛-夏威夷(大岛、欧胡12日)
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tip">
+                <div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="img/hotTip/4-2.jpg" alt="" class="img-1"
+                                 title="从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                                     中欧三国四地仲夏漫游记？">
+                        </a>
+                        <a href="#">12</a>
+                    </div>
+                </div>
+                <div class="tip-inner">
+                    <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s26.jpg"
+                                         title="从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                                         中欧三国四地仲夏漫游记？">
+                                </a>
+                            </span>
+                        <span class="avatar-name">
+                                <a href="#" title="帅到爆咋">
+                                    帅到爆咋
+                                </a>
+                            </span>
+                    </div>
+                    <div class="tip-title">
+                        <a href="#" title="从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                            中欧三国四地仲夏漫游记？">
+                            从多瑙河到伏尔塔瓦河【维也纳，布达佩斯，CK小镇】
+                            中欧三国四地仲夏漫游记？
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tip">
+                <div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="img/hotTip/4-3.jpg" alt="" class="img-1"
+                                 title="神秘的南美，天空之境与远古之石">
+                        </a>
+                        <a href="#">34</a>
+                    </div>
+                </div>
+                <div class="tip-inner">
+                    <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s27.jpg"
+                                         title="神秘的南美，天空之境与远古之石">
+                                </a>
+                            </span>
+                        <span class="avatar-name">
+                                <a href="#" title="孤独风中一匹狼">
+                                    孤独风中一匹狼
+                                </a>
+                            </span>
+                    </div>
+                    <div class="tip-title">
+                        <a href="#" title="神秘的南美，天空之境与远古之石">
+                            神秘的南美，天空之境与远古之石
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tip">
+                <div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="img/hotTip/4-4.jpg" alt="" class="img-1"
+                                 title="超级干货：我给全球所有民航局群发了375封邮件，
+                                     询问无人机法规">
+                        </a>
+                        <a href="#">21</a>
+                    </div>
+                </div>
+                <div class="tip-inner">
+                    <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s28.jpg"
+                                         title="超级干货：我给全球所有民航局群发了375封邮件，
+                                         询问无人机法规">
+                                </a>
+                            </span>
+                        <span class="avatar-name">
+                                <a href="#" title="半夏微凉">
+                                    半夏微凉
+                                </a>
+                            </span>
+                    </div>
+                    <div class="tip-title">
+                        <a href="#" title="超级干货：我给全球所有民航局群发了375封邮件，
+                            询问无人机法规">
+                            超级干货：我给全球所有民航局群发了375封邮件，询问无人机法规
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tip">
+                <div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="img/hotTip/4-5.jpg" alt="" class="img-1"
+                                 title="初夏关东，七日漫步东京(含东京附近刷三年签方法，
+                                     超大信息量情报 &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                        </a>
+                        <a href="#">43</a>
+                    </div>
+                </div>
+                <div class="tip-inner">
+                    <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s29.jpg"
+                                         title="初夏关东，七日漫步东京(含东京附近刷三年签方法，
+                                         超大信息量情报 &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                                </a>
+                            </span>
+                        <span class="avatar-name">
+                                <a href="#" title="柠檬很酸">
+                                    柠檬很酸
+                                </a>
+                            </span>
+                    </div>
+                    <div class="tip-title">
+                        <a href="#" title="初夏关东，七日漫步东京(含东京附近刷三年签方法，超大信息量情报
+                            &文化知识，行程建议，东京地区经典机位拍摄全过程)">
+                            初夏关东，七日漫步东京(含东京附近刷三年签方法，超大信息量情报
+                            &文化知识，行程建议，东京地区经典机位拍摄全过程)
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tip">
+                <div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="img/hotTip/4-6.jpg" alt="" class="img-1"
+                                 title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                                     自驾篇附全程GPS">
+                        </a>
+                        <a href="#">23</a>
+                    </div>
+                </div>
+                <div class="tip-inner">
+                    <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s30.jpg"
+                                         title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                                         自驾篇附全程GPS">
+                                </a>
+                            </span>
+                        <span class="avatar-name">
+                                <a href="#" title="蓝色海洋传说">
+                                    蓝色海洋传说
+                                </a>
+                            </span>
+                    </div>
+                    <div class="tip-title">
+                        <a href="#" title="【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】
+                            自驾篇附全程GPS">
+                            【小狮妹布列塔尼探秘之旅(法国/比利时/荷兰)】自驾篇附全程GPS
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tip">
+                <div>
+                    <div class="img">
+                        <a href="#">
+                            <img src="img/hotTip/5-1.jpg" alt="" class="img-1"
+                                 title="【中国老司机 自驾游全球】夏威夷芈月游
+                                     (欧胡岛+大岛自驾)11天">
+                        </a>
+                        <a href="#">23</a>
+                    </div>
+                </div>
+                <div class="tip-inner">
+                    <div>
+                            <span class="avatar">
+                                <a href="#">
+                                    <img src="img/hotTip/avatar/s31.jpg"
+                                         title="【中国老司机 自驾游全球】夏威夷芈月游
+                                         (欧胡岛+大岛自驾)11天">
+                                </a>
+                            </span>
+                        <span class="avatar-name">
+                                <a href="#" title="布衣天使">
+                                    布衣天使
+                                </a>
+                            </span>
+                    </div>
+                    <div class="tip-title">
+                        <a href="#" title="【中国老司机 自驾游全球】夏威夷芈月游
+                            (欧胡岛+大岛自驾)11天">
+                            【中国老司机 自驾游全球】夏威夷芈月游(欧胡岛+大岛自驾)11天
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="slide-btn0">
+            <a href="#tip1" class="bt0 active"></a>
+            <a href="#tip2" class="bt0"></a>
+            <a href="#tip3" class="bt0"></a>
+            <a href="#tip4" class="bt0"></a>
+        </div>
+        <div class="more-btn0">
+            <a href="#">
+                <button>查看更多游记</button>
+            </a>
+        </div>
+    </div>
+    <!--f4-->
+    <div class="f4">
+        <div class="f4-1">
+            <div>
+                <h1>免费体验，限时申领中</h1>
+                <div class="feel">
+                    <div class="jne">
+                        <div class="jne-img">
+                            <a href="#">
+                                <img src="img/adv/1-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="jne-content">
+                            <p>JNE 随意泊 旅行休闲双肩背包</p>
+                            <div class="jne-inner">
+                                <div class="price-num">
+                                    <a href="#">价值 ￥ 368</a>
+                                    <a href="#">免费体验名额 5 个</a>
+                                </div>
+                                <button>查看详情</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="try">
+                        <a href="#">
+                            <img src="img/adv/1-2.jpg" alt="">
+                        </a>
+                        <div class="try-content">
+                            <a href="#">
+                                <img src="img/adv/1-3.jpg" alt="">
+                            </a>
+                            <div class="try-inner">
+                                <h4>免费体验索尼降噪耳机MDR-1000DX</h4>
+                                <div>价值￥2,899</div>
+                                <div>免费体验名额 5 个</div>
+                            </div>
+                        </div>
+                        <div class="try-join">
+                            <ul class="join-avatar">
+                                <li>
+                                    <a href="#">近期参与</a>
+                                </li>
+                                <li>
+                                    <img src="img/adv/1-5.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/adv/1-6.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/adv/1-7.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/adv/1-8.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/adv/1-9.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan">
+                <h1>特别策划</h1>
+                <div class="plan-content">
+                    <div class="plan-head">
+                        <ul>
+                            <li>地球研习社</li>
+                            <li>Q-story</li>
+                            <li>去也</li>
+                        </ul>
+                    </div>
+                    <div class="plan-body">
+                        <a href="#">
+                            <img src="img/adv/1-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="plan-more">
+                        <a href="#">查看更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f4-2">
+            <img src="img/adv/2-1.jpg" alt="">
+        </div>
+        <div class="f4-3">
+            <div class="code">
+                <div class="qy-code">
+                    <h2>穷游App</h2>
+                    <dl>
+                        <dt>
+                            <img src="img/adv/app_qyer.png" alt="">
+                        </dt>
+                        <dd>穷游</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="img/adv/app_plan.png" alt="">
+                        </dt>
+                        <dd>行程助手</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="img/adv/app_z.png" alt="">
+                        </dt>
+                        <dd>穷游最世界</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="img/adv/app_guide.png" alt="">
+                        </dt>
+                        <dd>穷游精囊</dd>
+                    </dl>
+                </div>
+                <div class="chat-code">
+                    <h2>微信号</h2>
+                    <dl>
+                        <dt>
+                            <img src="img/adv/code_qyer.png" alt="">
+                        </dt>
+                        <dd>穷游网</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="img/adv/code_plan.png" alt="">
+                        </dt>
+                        <dd>行程助手</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="img/adv/code_z.png" alt="">
+                        </dt>
+                        <dd>穷游最世界</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <img src="img/adv/code_guide.png" alt="">
+                        </dt>
+                        <dd>穷游精囊</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--bottom-->
+    <div class="bottom">
+        <div class="about">
+            <ul class="about-content">
+                <li>
+                    <ul>
+                        <li>
+                            <a href="#">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="#">穷游简介</a>
+                        </li>
+                        <li>
+                            <a href="#">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="#">合作伙伴</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="#">加入穷游</a>
+                        </li>
+                        <li>
+                            <a href="#">招聘职位</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="#">网站条款</a>
+                        </li>
+                        <li>
+                            <a href="#">会员条款</a>
+                        </li>
+                        <li>
+                            <a href="#">社区指南</a>
+                        </li>
+                        <li>
+                            <a href="#">版权声明</a>
+                        </li>
+                        <li>
+                            <a href="#">免责声明</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="#">帮助中心</a>
+                        </li>
+                        <li>
+                            <a href="">新手上路</a>
+                        </li>
+                        <li>
+                            <a href="">使用帮助</a>
+                        </li>
+                        <li>
+                            <a href="">网站地图</a>
+                        </li>
+                        <li>
+                            <a href="">旅行工具</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-inner">
+                <a href="#">
+                    <img src="img/footer/logo_gray.png" alt="" style="width:84px;
+                         height:36px;">
+                </a>
+                <span>
+                    2004-2017 © 穷游网® qyer.com All rights reserved. Version v5.57
+                    京ICP备12003524号  京公网安备11010102001935  京ICP证140673号  营业执照
+                    经营许可证穷游网为旅行者提供原创实用的出境游旅行指南和旅游攻略、
+                    旅行社区和问答交流平台，并提供签证、保险、机票、酒店预订、租车等服务。
+                </span>
+                <a href="#">
+                    <img src="img/footer/chengxin.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer-link">
+            <div class="link-inner">
+                <span>友情链接</span>
+                <span>
+                    <a href="#">交通查询</a>|
+                    <a href="#">租租车</a>|
+                    <a href="#">美术教育</a>|
+                    <a href="#">中国交通网</a>|
+                    <a href="#">长途汽车票</a>|
+                    <a href="#">旅行网</a>|
+                    <a href="#">首都航空</a>|
+                    <a href="#">在线教育</a>|
+                    <a href="#">金运之旅</a>|
+                    <a href="#">豌豆荚安卓市场</a>|
+                    <a href="#">凤凰网旅游</a>|
+                    <a href="#">凯撒旅游</a>|
+                    <a href="#">神州租车</a>|
+                    <a href="#">国际租车</a>|
+                    <a href="#">携程攻略社区</a>|
+                    <a href="#">蜂鸟网</a>|
+                    <a href="#">天巡国际机票</a>|
+                    <a href="#">游普旅行网</a>|
+                    <a href="#">中国签证资讯网</a>|
+                    <a href="#">梦之旅</a>|
+                    <a href="#">九游网</a>|
+                    <a href="#">北京国旅官网</a>|
+                    <a href="#">同城旅游</a>|
+                    <a href="#">腾邦国际</a>|
+                    <a href="#">相约久久旅行网</a>|
+                    <a href="#">途牛旅行网</a>|
+                    <a href="#">日租房</a>|
+                    <a href="#">遨游网</a>|
+                    <a href="#">携程旅行网</a>|
+                    <a href="#">春秋航空</a>|
+                    <a href="#">搜狗壁纸</a>|
+                    <a href="#">户外资料网</a>|
+                    <a href="#">爱旅行网</a>|
+                    <a href="#">美术教育</a>|
+                    <a href="#">中国交通网</a>|
+                    <a href="#">神州国旅</a>|
+                    <a href="#">拉拉勾旅游网</a>|
+                    <a href="#">火车票</a>|
+                    <a href="#">劲旅网</a>|
+                    <a href="#">米胖旅游网</a>|
+                    <a href="#">五分网</a>|
+                    <a href="#">绿野网</a>|
+                    <a href="#">天气预报15天查询</a>|
+                    <a href="#">走遍欧洲</a>|
+                    <a href="#">酒店预订</a>|
+                    <a href="#">星星旅游网</a>|
+                    <a href="#">驴妈妈旅游网</a>|
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<script src="js/index.js"></script>
+</html>
